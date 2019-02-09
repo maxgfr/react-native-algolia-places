@@ -69,7 +69,7 @@ export default class ReactNativeAlgoliaPlaces extends Component {
              * onChangeText
              * return a Promise
              */
-            onChangeText={this.searchResults}
+            onChangeText={this.props.searchOnChangeText ? this.props.searchOnChangeText : this.searchResults}
             /**
              * onCancel
              * return a Promise
@@ -102,7 +102,7 @@ export default class ReactNativeAlgoliaPlaces extends Component {
             /**
              * text input
              */
-            defaultValue={this.state.textSearch}
+            defaultValue={this.props.searchDefaultValue ? this.props.searchDefaultValue : this.state.textSearch}
             placeholder={this.props.searchPlaceholder ? this.props.searchPlaceholder : null}
             cancelTitle={this.props.searchCancelTitle ? this.props.searchCancelTitle : null}
             iconDelete={this.props.searchIconDelete ? this.props.searchIconDelete : null}
