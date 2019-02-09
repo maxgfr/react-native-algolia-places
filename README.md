@@ -6,13 +6,13 @@ ReactNativeAlgoliaPlaces is a module for React Native that helps you to create a
 
 ## Installation
 ```
-npm i react-native-algolia-places --save
+npm i react-native-algolia-places-extended --save
 ```
 
 ## Usage
 ### Basic
 ```js
-import ReactNativeAlgoliaPlaces from 'react-native-algolia-places'
+import ReactNativeAlgoliaPlaces from 'react-native-algolia-places-extended'
 
 render() {
     <ReactNativeAlgoliaPlaces appId={"appId"} appKey={"appKey"} />
@@ -20,7 +20,7 @@ render() {
 ```
 ### Render Object
 ```js
-import ReactNativeAlgoliaPlaces from 'react-native-algolia-places'
+import ReactNativeAlgoliaPlaces from 'react-native-algolia-places-extended'
 
 render() {
     <ReactNativeAlgoliaPlaces appId={"appId"} appKey={"appKey"} 
