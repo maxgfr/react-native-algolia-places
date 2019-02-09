@@ -1,7 +1,7 @@
 {
   "name": "react-native-algolia-places",
-  "version": "0.0.4",
-  "homepage": "https://github.com/lucalas/react-native-algolia-places#readme",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pavlealeksic/react-native-algolia-places#readme",
   "description": "React Native module to search places using Algolia Places API",
   "main": "./src/index.js",
   "dependencies": {
@@ -9,7 +9,7 @@
     "prop-types": "^15.6.2",
     "react-native-search-box": "^0.0.19"
   },
-  "author": "Luca Taddeo",
+  "author": "Pavle Aleksic",
   "license": "MIT",
   "peerDependencies": {
     "@types/react": ">=16.4.18",
@@ -21,11 +21,11 @@
     "react-native": "^0.56.0"
   },
   "bugs": {
-    "url": "https://github.com/lucalas/react-native-algolia-places/issues"
+    "url": "https://github.com/pavlealeksic/react-native-algolia-places/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucalas/react-native-algolia-places.git"
+    "url": "git+https://github.com/pavlealeksic/react-native-algolia-places.git"
   },
   "keywords": [
     "AlgoliaPlaces",
