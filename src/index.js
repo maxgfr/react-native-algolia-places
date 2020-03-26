@@ -85,7 +85,7 @@ export default class ReactNativeAlgoliaPlaces extends Component {
                    * beforeDelete, onDelete, afterDelete
                    */
                   beforeDelete={this.props.searchBeforeDelete ? this.props.searchBeforeDelete : null}
-                  onDelete={this.props.searchOnDelete ? this.props.searchOnDelete : null}
+                  onDelete={() => { this.searchResults(""); }}
                   afterDelete={this.props.searchAfterDelete ? this.props.searchAfterDelete : null}
 
                   /**
