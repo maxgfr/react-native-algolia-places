@@ -1,7 +1,7 @@
 {
-  "name": "react-native-algolia-places-extended",
-  "version": "0.0.4",
-  "homepage": "https://github.com/pavlealeksic/react-native-algolia-places#readme",
+  "name": "react-native-algolia-places-extended-x2",
+  "version": "0.0.5",
+  "homepage": "https://github.com/maxgfr/react-native-algolia-places#readme",
   "description": "React Native module to search places using Algolia Places API",
   "main": "./src/index.js",
   "dependencies": {
@@ -21,11 +21,11 @@
     "react-native": "^0.56.0"
   },
   "bugs": {
-    "url": "https://github.com/pavlealeksic/react-native-algolia-places/issues"
+    "url": "https://github.com/maxgfr/react-native-algolia-places/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavlealeksic/react-native-algolia-places.git"
+    "url": "git+https://github.com/maxgfr/react-native-algolia-places.git"
   },
   "keywords": [
     "AlgoliaPlaces",
