@@ -1,6 +1,6 @@
 {
   "name": "react-native-algolia-places-extended-x2",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/maxgfr/react-native-algolia-places#readme",
   "description": "React Native module to search places using Algolia Places API",
   "main": "./src/index.js",
