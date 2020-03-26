@@ -15,8 +15,6 @@ export default class ReactNativeAlgoliaPlaces extends Component {
 
         this.places = algoliasearch.initPlaces(this.props.appId, this.props.appKey);
 
-        this.searchResults(this.state.textSearch);
-
     }
 
     searchResults(text) {
@@ -79,13 +77,7 @@ export default class ReactNativeAlgoliaPlaces extends Component {
                    * return a Promise
                    */
                   beforeCancel={this.props.searchBeforeCancel ? this.props.searchBeforeCancel : null}
-                  onCancel={() => {
-                    if(this.props.searchCancel) {
-                      this.props.searchOnCancel();
-                    } else {
-                      this.searchResults("");
-                    }
-                  }}
+                  onCancel={() => { this.searchResults(""); }}
                   afterCancel={this.props.searchAfterCancel ? this.props.searchAfterCancel : null}
                   /**
                    * async await
