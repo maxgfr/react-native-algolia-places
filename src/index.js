@@ -9,7 +9,7 @@ export default class ReactNativeAlgoliaPlaces extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {textSearch: "", search: null};
+        this.state = {textSearch: "", search: null, display: false};
 
         this.searchResults = this.searchResults.bind(this);
 
@@ -34,10 +34,12 @@ export default class ReactNativeAlgoliaPlaces extends Component {
 
           this.places
               .search(finalOptions).then(res => {
-                  this.setState({search: res, textSearch: text});
+                  this.setState({search: res, textSearch: text, display: true});
               }).catch(err => {
                   this.onSearchError(err);
               });
+        } else {
+          this.setState({display: false});
         }
     }
 
@@ -128,7 +130,7 @@ export default class ReactNativeAlgoliaPlaces extends Component {
                   placeholderExpandedMargin={this.props.searchPlaceholderExpandedMargin ? this.props.searchPlaceholderExpandedMargin : null}
               />
               {
-                  this.state.search && this.state.search.hits.map((item, i) =>
+                  this.state.display && this.state.search && this.state.search.hits.map((item, i) =>
                       this.props.itemList(item, i, this.state.textSearch)
                   )
               }
