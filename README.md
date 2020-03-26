@@ -4,7 +4,7 @@ ReactNativeAlgoliaPlaces is a module for React Native that helps you to create a
 
 ## Installation
 ```
-npm i https://github.com/maxgfr/react-native-algolia-places.git --save
+yarn add https://github.com/maxgfr/react-native-algolia-places.git
 ```
 
 ## Usage
