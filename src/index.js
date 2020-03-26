@@ -79,7 +79,13 @@ export default class ReactNativeAlgoliaPlaces extends Component {
                    * return a Promise
                    */
                   beforeCancel={this.props.searchBeforeCancel ? this.props.searchBeforeCancel : null}
-                  onCancel={this.props.searchOnCancel ? this.props.searchOnCancel : null}
+                  onCancel={() => {
+                    if(this.props.searchCancel) {
+                      this.props.searchOnCancel();
+                    } else {
+                      this.searchResults("");
+                    }
+                  }}
                   afterCancel={this.props.searchAfterCancel ? this.props.searchAfterCancel : null}
                   /**
                    * async await
