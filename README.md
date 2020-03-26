@@ -18,7 +18,7 @@ render() {
 ```
 ### Render Object
 ```js
-import ReactNativeAlgoliaPlaces from 'react-native-algolia-places-extended'
+import ReactNativeAlgoliaPlaces from 'react-native-algolia-places-extended-x2'
 
 render() {
     <ReactNativeAlgoliaPlaces appId={"appId"} appKey={"appKey"}
